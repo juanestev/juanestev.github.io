@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Martín Estevez</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Juan Martín Estevez</h1>
+        <p class="fond">Estudiante Ingeniería en Informática | Técnico aviónico</p>
+        <div class="Redes">
+            <a href="https://github.com/juanestev" class="fond"><img src="images/descarga-removebg-preview.png" alt="" class="Redes, imagen" width="45px" height="40px"></a>
+            <a href="https://www.linkedin.com/in/juan-martin-estevez-96384833a/" class="fond"><img src="images/descarga__1_-removebg-preview.png" alt="" class="Redes, imagen" width="35px" height="30px"></a>
+            <a href="https://www.instagram.com/juanmaestevez_/" class="fond"><img src="images/descarga__2_-removebg-preview.png" alt="" class="Redes, imagen, ig" width="37px" height="32px"></a>
+            <a href="mailto:juanmartestevez@gmail.com" class="fond"><img src="images/imagen_2025-02-10_233714446-removebg-preview.png" alt="" class="Redes, imagen" width="37px" height="32px"></a>
+        </div>
+        <ul class="list fond">
+            <li><a href="#" id="bot-sobre"><h3 class="fond indice">Sobre mi   </h3></a></li>
+            <li><a href="#" id="bot-hab"><h3 class="fond indice">Habilidades</h3></a></li>
+            <li><a href="#" id="bot-exp"><h3 class="fond indice">Experiencia</h3></a></li>
+        </ul>
+    </header>
+    
+    <section id="sobre" class="caja">
+        <h1>Sobre mi</h1>
+        <p class="fond intro">Estudiante de Ingeniería en
+            Informática con interés en
+            desarrollo de software, inteligencia
+            artificial y ciberseguridad.
+            Experiencia en proyectos
+            innovadores como <a href="https://github.com/impatrq/ecosorter/tree/main" class="subrayado"><b class="fond">Ecosorter</b></a> y
+            participación destacada en
+            eventos tecnológicos. Proactivo,
+            con habilidades en resolución de
+            problemas técnicos y aprendizaje
+            de nuevas tecnologías.</p>
+    </section>
+
+    <section id="hab" class="caja">
+        <h1>Habilidades</h1>
+        <h3 class="fond">Lenguajes de Programación</h3>
+        <div class="habilidades">
+            <button class="fond" id="inter"><img src="images/Python-logo-notext.svg.png" class="fond logos" alt="" width="30px" height="30px"></button>
+            <button class="fond" id="inter2"><img src="images/HTML5_logo_and_wordmark.svg.png" alt="" class="fond logos" width="30px" height="30px"></button>
+            <button class="fond" id="inter3"><img src="images/CSS3_logo_and_wordmark.svg.png" alt="" class="fond logos" width="30px" height="30px"></button>
+            <button class="fond" id="inter4"><img src="images/The_C_Programming_Language_logo.svg.png" alt="" class="fond logos" width="30px" height="30px"></button>
+            <button class="fond" id="bajo"><img src="images/Unofficial_JavaScript_logo_2.svg.png" alt="" class="fond logos" width="30px" height="30px"></button>
+            <button class="fond" id="bajo2"><img src="images/PHP-logo.svg.png" alt="" class="fond logos" width="45px" height="30px"></button>
+        </div>
+        <h4 id="intermedio" class="fond cartel">Intermedio</h4>
+        <h3 class="fond top">Base de Datos</h3>
+        <div class="fond top">
+            <button class="fond" id="inter5"><img src="images/com037-scaled-removebg-preview.png" alt="" class="fond logos" width="40px" height="40px"></button>
+            <button class="fond" id="inter6"><img src="images/fesv-removebg-preview.png" alt="" class="fond logos" width="40px" height="40px"></button>
+        </div>
+        <h4 id="intermedio2" class="fond cartel">Intermedio</h4>
+        <h3 class="fond top">Frameworks</h3>
+        <button class="fond" id="inter7"><img src="images/descarga.png" alt="" class="fond logos" width="40px" height="40px"></button>
+        <h4 id="intermedio3" class="fond cartel">Intermedio</h4>
+    </section>
+
+    <section id="exp" class="caja final">
+        <h1 style="margin-bottom: 8px;">Experiencia</h1>
+        <button id="ecosorter" class="fond proyectos">
+            <section class="fond">
+            <h3 class="fond exp">Proyecto Ecosorter</h3>
+            <p class="fond text">Ecosorter es un sistema de clasificación automática de residuos mediante IA, desarrollado en la Escuela Técnica Nº7. Utiliza una cámara con YOLOv8, motores NEMA 23, un electroimán y una interfaz con pantalla LCD de 5” para optimizar el reciclaje. Implementa un sistema de puntos y recompensas por reciclar.</p>
+            <div class="fotos fond">
+                <img src="images/images-removebg-previewizquierda.png" alt="" class="fond izquierda" id="izquierda">
+                <img src="images/imagen_2024-04-09_081309608-removebg-preview.png" alt="" class="fond imagenpr" id="log">
+                <img src="images/images-removebg-derecha.png" alt="" class="fond derecha" id="derecha">
+            </div>
+            <img src="images/images-removebg-preview.png" alt="" class="fond flecha" id="subir" >
+            <a href="https://github.com/impatrq/ecosorter/tree/main" class="fond link"><img src="images/descarga-removebg-preview.png" class="fond imagen enlace" height="40px" width="45px"></a>
+            </section>
+        </button>
+    </section>
+
+    <script>
+        document.getElementById("bot-sobre").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            document.getElementById("sobre").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("bot-hab").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            document.getElementById("hab").scrollIntoView({ behavior: "smooth" });
+        });
+        document.getElementById("bot-exp").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            document.getElementById("exp").scrollIntoView({ behavior: "smooth" });
+        });
+
+        let elemento = document.getElementById("intermedio");
+        let elemento2 = document.getElementById("intermedio2");
+        let elemento3 = document.getElementById("intermedio3");
+        let flechaIzquieda = document.getElementById("izquierda");
+        let flechaDerecha = document.getElementById("derecha");
+        let index = 0;
+        let imagen = document.getElementById("log");
+        const imagenes = [
+                "images/imagen_2024-04-09_081309608-removebg-preview.png",
+                "images/foto_grupal.jpg",
+                "images/Captura de pantalla 2025-02-12 192232.png",
+                "images/Captura de pantalla 2025-02-12 192541.png"
+        ];
+        var l = 1;
+
+        elemento.innerText = "intermedio";
+        document.getElementById("inter").addEventListener("click", function() {
+            if (elemento.innerText.trim() !== "Intermedio"){
+                elemento.innerText = "Intermedio";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 1){
+                l = 1;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter2").addEventListener("click", function() {
+            if (elemento.innerText.trim() !== "Intermedio"){
+                elemento.innerText = "intermedio";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 2){
+                l = 2;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter3").addEventListener("click", function() {
+            if (elemento.innerText.trim() !== "Intermedio"){
+                elemento.innerText = "Intermedio";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 3){
+                l = 3;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter4").addEventListener("click", function() {
+            if (elemento.innerText.trim() !== "Intermedio"){
+                elemento.innerText = "Intermedio";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 6){
+                l = 6;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("bajo").addEventListener("click", function() {
+            if (elemento.innerText !== "Bajo"){
+                elemento.innerText = "Bajo";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 4){
+                l = 4;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("bajo2").addEventListener("click", function() {
+            if (elemento.innerText !== "Bajo"){
+                elemento.innerText = "Bajo";
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            if (l !== 5){
+                l = 5;
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            }
+            else if (elemento.style.opacity === "0"){
+                elemento.style.opacity = "1";
+                elemento.style.margin = "20px";
+            } else{
+                elemento.style.opacity = "0";
+                elemento.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter5").addEventListener("click", function() {
+            if (elemento2.innerText.trim() !== "Intermedio"){
+                elemento2.innerText = "Intermedio";
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            }
+            if (l !== 1){
+                l = 1;
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            }
+            else if (elemento2.style.opacity === "0"){
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            } else{
+                elemento2.style.opacity = "0";
+                elemento2.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter6").addEventListener("click", function() {
+            if (elemento2.innerText.trim() !== "Intermedio"){
+                elemento2.innerText = "Intermedio";
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            }
+            if (l !== 2){
+                l = 2;
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            }
+            else if (elemento2.style.opacity === "0"){
+                elemento2.style.opacity = "1";
+                elemento2.style.margin = "20px";
+            } else{
+                elemento2.style.opacity = "0";
+                elemento2.style.margin = "0px";
+            }
+        });
+        document.getElementById("inter7").addEventListener("click", function() {
+            if (elemento3.innerText.trim() !== "Intermedio"){
+                elemento3.innerText = "Intermedio";
+                elemento3.style.opacity = "1";
+                elemento3.style.margin = "20px";
+            }
+            else if (elemento3.style.opacity === "0"){
+                elemento3.style.opacity = "1";
+                elemento3.style.margin = "20px";
+            } else{
+                elemento3.style.opacity = "0";
+                elemento3.style.margin = "0px";
+            }
+        });
+        
+        flechaDerecha.addEventListener("click", function(){
+            index = (index + 1) % imagenes.length;
+            document.getElementById("log").src = imagenes[index];
+        });
+        flechaIzquieda.addEventListener("click", function(){
+            index = (index - 1 + imagenes.length) % imagenes.length;
+            document.getElementById("log").src = imagenes[index];
+        });
+        document.getElementById("subir").addEventListener("click", function(){
+            if (imagen.style.width === "300px"){
+                document.getElementById("subir").style.transform = 'translate(0px, 15px) rotate(0turn)';
+                imagen.style.width = "0px";
+                flechaDerecha.style.width = "0px";
+                flechaIzquieda.style.width = "0px";
+            } else{
+                imagen.style.width = "300px";
+                flechaDerecha.style.width = "30px";
+                flechaIzquieda.style.width = "30px";
+                document.getElementById("subir").style.transform = ' translate(0px, 15px) rotate(0.5turn)';
+            }
+        });
+        document.getElementById("ecosorter").addEventListener("mouseenter", function(){
+            if (imagen.style.width === "300px"){
+                document.getElementById("subir").style.transform = 'translate(0px, 15px) rotate(0.5turn)'
+            }else{
+                document.getElementById("subir").style.transform = 'translate(0px, 25px)'
+            }
+        });
+        document.getElementById("ecosorter").addEventListener("mouseleave", function(){
+            document.getElementById("subir").style.transform = 'translate(0px, 15px)'  
+        });
+
+
+    </script>
+</body>
+</html>
