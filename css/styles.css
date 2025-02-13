@@ -279,11 +279,26 @@ button{
 
 @media screen and (max-width: 850px){
     header{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    header p{
+        text-align: center;
     }
     .caja{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: 1px;
+        margin-right: 1px;
     }
+    .intro{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+   /* .proyectos{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+   }  */
+   .exp{
+    padding-right: 0;
+   }
 }
