@@ -301,4 +301,10 @@ button{
    .exp{
     padding-right: 0;
    }
+   .flecha{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+   }
 }
