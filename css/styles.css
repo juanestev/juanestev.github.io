@@ -306,5 +306,6 @@ button{
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
    }
 }
