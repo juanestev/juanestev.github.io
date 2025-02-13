@@ -285,20 +285,34 @@
             document.getElementById("log").src = imagenes[index];
         });
         document.getElementById("subir").addEventListener("click", function(){
-            if (imagen.style.width === "300px"){
+            if (imagen.style.width === "400px"){
                 document.getElementById("subir").style.transform = 'translate(0px, 15px) rotate(0turn)';
                 imagen.style.width = "0px";
                 flechaDerecha.style.width = "0px";
                 flechaIzquieda.style.width = "0px";
-            } else{
-                imagen.style.width = "300px";
+            } 
+            else if (window.innerWidth <= 768){
+                if (imagen.style.width === "220px"){
+                document.getElementById("subir").style.transform = 'translate(0px, 15px) rotate(0turn)';
+                imagen.style.width = "0px";
+                flechaDerecha.style.width = "0px";
+                flechaIzquieda.style.width = "0px";
+                } else{
+                    imagen.style.width = "220px";
+                    flechaDerecha.style.width = "30px";
+                    flechaIzquieda.style.width = "30px";
+                    document.getElementById("subir").style.transform = ' translate(0px, 15px) rotate(0.5turn)';
+                }
+            }
+            else{
+                imagen.style.width = "400px";
                 flechaDerecha.style.width = "30px";
                 flechaIzquieda.style.width = "30px";
                 document.getElementById("subir").style.transform = ' translate(0px, 15px) rotate(0.5turn)';
             }
         });
         document.getElementById("ecosorter").addEventListener("mouseenter", function(){
-            if (imagen.style.width === "300px"){
+            if (imagen.style.width === "400px" || imagen.style.width === "220px"){
                 document.getElementById("subir").style.transform = 'translate(0px, 15px) rotate(0.5turn)'
             }else{
                 document.getElementById("subir").style.transform = 'translate(0px, 25px)'
